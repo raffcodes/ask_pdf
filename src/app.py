@@ -63,7 +63,7 @@ def show_login_page():
         if username_input == username and password_input == password:
             st.session_state["logged_in"] = True
             st.success("Login successful!")
-            st.experimental_rerun()  # Rerun the script after successful login
+            #st.experimental_rerun()  # Rerun the script after successful login
         else:
             st.error("Invalid username or password")
 
